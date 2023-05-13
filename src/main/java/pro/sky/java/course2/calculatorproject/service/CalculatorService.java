@@ -1,0 +1,9 @@
+package pro.sky.java.course2.calculatorproject.service;
+
+public interface CalculatorService {
+    String sayHello();
+    Integer plus(Integer a, Integer b);
+    Integer minus(Integer a, Integer b);
+    Integer multiply(Integer a, Integer b);
+    Integer divide(Integer a, Integer b);
+}

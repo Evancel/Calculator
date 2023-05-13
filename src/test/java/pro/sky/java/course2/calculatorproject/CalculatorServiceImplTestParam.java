@@ -7,6 +7,7 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 import pro.sky.java.course2.calculatorproject.exception.BadParamException;
 import pro.sky.java.course2.calculatorproject.exception.DivideByZeroException;
+import pro.sky.java.course2.calculatorproject.service.CalculatorService;
 import pro.sky.java.course2.calculatorproject.service.CalculatorServiceImpl;
 
 import java.util.stream.Stream;
@@ -14,7 +15,7 @@ import java.util.stream.Stream;
 import static pro.sky.java.course2.calculatorproject.CalculatorServiceImplTestConstants.*;
 
 public class CalculatorServiceImplTestParam {
-    private final CalculatorServiceImpl out = new CalculatorServiceImpl();
+    private final CalculatorService out = new CalculatorServiceImpl();
     public static Stream <Arguments> provideParamForSuccessfulTestsExceptDivide() {
         return Stream.of(
                 Arguments.of(A1, B1),

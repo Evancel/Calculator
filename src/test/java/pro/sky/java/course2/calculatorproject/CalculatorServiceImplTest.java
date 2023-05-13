@@ -10,7 +10,7 @@ import pro.sky.java.course2.calculatorproject.service.CalculatorServiceImpl;
 import static pro.sky.java.course2.calculatorproject.CalculatorServiceImplTestConstants.*;
 
 public class CalculatorServiceImplTest {
-    private final CalculatorServiceImpl out = new CalculatorServiceImpl();
+    private final CalculatorService out = new CalculatorServiceImpl();
 
     @Test
     public void checkHello(){
@@ -49,7 +49,7 @@ public class CalculatorServiceImplTest {
         Integer b = B1;
 
         Integer expected = out.minus(a,b);
-        Integer actual = a+b;
+        Integer actual = a-b;
         Assertions.assertEquals(expected, actual);
     }
     @Test
@@ -58,7 +58,7 @@ public class CalculatorServiceImplTest {
         Integer b = B2;
 
         Integer expected = out.minus(a, b);
-        Integer actual = a+b;
+        Integer actual = a-b;
         Assertions.assertEquals(expected, actual);
     }
 
@@ -76,7 +76,7 @@ public class CalculatorServiceImplTest {
         Integer b = B1;
 
         Integer expected = out.multiply(a,b);
-        Integer actual = a+b;
+        Integer actual = a*b;
         Assertions.assertEquals(expected, actual);
     }
     @Test
@@ -85,7 +85,7 @@ public class CalculatorServiceImplTest {
         Integer b = B2;
 
         Integer expected = out.multiply(a, b);
-        Integer actual = a+b;
+        Integer actual = a*b;
         Assertions.assertEquals(expected, actual);
     }
 
@@ -103,7 +103,7 @@ public class CalculatorServiceImplTest {
         Integer b = B1;
 
         Integer expected = out.divide(a,b);
-        Integer actual = a+b;
+        Integer actual = a/b;
         Assertions.assertEquals(expected, actual);
     }
     @Test
@@ -112,7 +112,7 @@ public class CalculatorServiceImplTest {
         Integer b = B2;
 
         Integer expected = out.divide(a, b);
-        Integer actual = a+b;
+        Integer actual = a/b;
         Assertions.assertEquals(expected, actual);
     }
 
